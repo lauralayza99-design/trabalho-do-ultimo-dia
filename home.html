@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Stellara</title>
+  
+</head>
+
+<body>
+  
+  <header>
+    <h1>Stellara</h1>
+    <h3>Praneje viagens para além das estrelas✨</h3>
+    
+    <div class="menu_1">
+      <button type="button" onclick="mostrarPagina('home')">
+        Home
+      </button>
+      
+      <button id="modoClaro">Modo claro☀️</button>
+      
+      <button id="botaoMenu" type="button">☰</button>
+    </div>
+    
+    <nav class="Menu" id="menu">
+      
+      <a href="ponto_de_embarque" data-pagina="embarque"> ponto de embarque</a>
+      
+      <a href="valores" data-pagina="valores">valores</a>
+      
+      <a href="Pacotes" data-pagina="pacotes">Pacotes</a>
+      
+      <a href="aeronaves" data-pagina="aeronaves">aeronaves</a>
+      
+      <a href="Hospedagem" data-pagina="hospedagem">Hospedagem</a>
+      
+      <a href="Regras" data-pagina="regras">Regras</a>
+      
+      <a href="destino" data-pagina="destino">destino</a>
+      
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section id="home" class="pagina ativa">
+      
+      <img src="assents/logo.png"></img>
+      
+      <div class="container">
+        
+        <div class="card">
+          <p>Nosso objetivo</p>
+          <div class="caixa">
+            <h2>Facilitar suas viagens e garantir uma boa experiência. A Stellara preza pela boa experiência de cada cliente durante toda a viagem. </h2>
+          </div>
+        </div>
+        <div class="card">
+          <p>Desde quando atuamos</p>
+          <div class="caixa">
+            <h2>Stellara atua desde 1980 em cidades do mundo todo, garantindo uma experiência extraordinária para todos que confiarem à nós suas viagens.</h2>
+            
+          </div>
+        </div>
+      </div>
+      
+      <img src="assents/janela do avião.png" class="imagem-redonda" />
+      
+    </section>
+    
+  <section id="hospedagem" class="pagina">
+      
+      
+<div class="barra">
+  
+<button class="botao-barra" onclick="abrirBarra(this)">
+  
+  <img class="barra_img" src="assents/marte.png" alt="martinha" />
+  
+  <span>Marte</span>
+          
+  <span class="seta">▼</span>
+
+</button>
+        
+<div class="conteudo-barra">
+  
+<div class="hotel_item">
+<div class="card_5" data-price="200">
+  
+<img src="assents/terra_nova.png">
+
+<div class="textos">
+<h1>Terra Nova Hotel</h1>
+<h2>local: Montanhas verdes</h2>
+<h2>valor por noite: R$ 200</h2>
+<h2>Horario de abertura: 6:00</h2>
+<h2>Horarios de alimentação:</h2> 
+<p>7:00 h Café da manhã</p>
+<p>13:00 h Almoço</p>
+<p>15:00 h lanche da tarde</p>
+<p>22:30 h Jantar</p>
+</div>
+</div>
+
+<div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          </div>
+          
+<div class="hotel_item">          
+<div class="card_5" data-price="190">
+<img src="assents/noctis.png">
+
+<div class="textos">
+<h1>Noctis Hotel</h1>
+<h2>local: Vale Brilhante</h2>
+<h2>valor por noite: R$ 190</h2>
+<h2>Horario de abertura: 5:00 h</h2>
+<h2>Horarios de alimentação:</h2>
+<p>6:30 h café da manhã</p>
+<p> 14:20 h Almoço</p>
+<p> 22:30 h Jantar</p>
+</div>
+</div>
+
+<div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+
+</div>
+
+
+          
+<div class="card_5" data-price="220">
+<img src="assents/canyon.png">
+
+<div class="textos">
+<h1>Canyon View Hotel</h1>
+<h2>local: Canyon Vermelho</h2>
+<h2>valor por noite: R$ 220</h2>
+<h2>Horario de abertura: 7:00 h</h2>
+<h2>Horarios de alimentação:</h2>
+<p>8:00 h Café da Manhã</p>
+<p>13:00 h Almoço</p>
+<p>17:00 Lanche</p>
+<p>22:00 Jantar</p>
+</div>
+</div>
+
+<div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+<div class="card_5" data-price="150">
+<img src="assents/olympus.png">
+
+<div class="textos">
+<h1>OLympus Hotel</h1>
+<h2>local: Planice Florente</h2>
+<h2>valor por noite: R$ 150</h2>
+<h2>Horario de abertura: 7:00 h</h2>
+<h2>Horarios de alimentação:</h2>
+<p>8:00 h café da Manhã</p>
+<p>14:00 h Almoço</p>
+<p>22:30 h Jantar</p>
+</div>
+</div>
+
+<div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+</div>
+
+</div>
+
+<div class="card_3">
+          <h1>Total</h1>
+          <h2 class="total">R$ 0,00</h2>
+        </div>
+
+</section>
+    
+    
+    <section id="valores" class="pagina">
+      
+      <div class="valores2">
+        
+        <div class="card_2" data-price="1800">
+          <li>
+          <li>Aeronave: Celestia
+          <li>Destino: Mercúrio a Zythera
+          <li>Valor: R$ 1.800,00
+          </li>
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_2" data-price="4500">
+          <li>
+          <li>Aeronave: Seraphine
+          <li>Destino: Mercúrio a Zythera
+          <li>Valor: R$ 4.500,00
+          </li>
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_2" data-price="1200">
+          <li>
+          <li>Aeronave: MoonRise
+          <li>Destino: Mercúrio a Zythera
+          <li>Valor: R$ 1.200,00
+          </li>
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_2" data-price="1100">
+          <li>
+          <li>Aeronave: Cosmic Pear
+          <li>Destino: Mercúrio a Zythera
+          <li>Valor: R$ 1.100,00
+          </li>
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_2" data-price="800">
+          <li>
+          <li>Aeronave: Eclipse
+          <li>Destino: Mercúrio a Zythera
+          <li>Valor: R$ 800,00
+          </li>
+          
+          <div class="contador">
+            
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_3">
+          <h1>Total</h1>
+          <h2 class="total">R$ 0,00</h2>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section id="pacotes" class="pagina">
+      
+      <section class="pc">
+        
+        <h1>Nave: Seraphine</h1>
+        <div class="card_2_2" data-price="7000">
+          <h2>Casal</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 2
+            <li>Valor: R$ 7.000,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+        </div>
+        
+        <div class="card_2_2" data-price="6000">
+          <h2>familia</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 8
+            <li>Valor: R$ 6.000,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="pc">
+        
+        <h1>Nave: Eclipse</h1>
+        
+        <div class="card_2_2" data-price="1300">
+          <h2>Casal</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 2
+            <li>Valor: R$ 1.300,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+        
+        <div class="card_2_2" data-price="5500">
+          <h2>familia</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 8
+            <li>Valor: R$ 5.500,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="pc">
+        
+        <h1>Nave: Celestia</h1>
+        <div class="card_2_2" data-price="3000">
+          <h2>Casal</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 2
+            <li>Valor: R$ 3.000,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+        
+        <div class="card_2_2" data-price="12200">
+          <h2>familia</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 8
+            <li>Valor: R$ 12.200,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="pc">
+        <h1>Nave: Moonrise</h1>
+        <div class="card_2_2" data-price="2000">
+          <h2>Casal</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 2
+            <li>Valor: R$ 2.000,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+        <div class="card_2_2" data-price="8000">
+          <h2>familia</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 8
+            <li>Valor: R$ 8.000,000
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="pc">
+        <h1>Nave: Cosmic Pear</h1>
+        <div class="card_2_2" data-price="1800">
+          <h2>Casal</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 2
+            <li>Valor: R$ 1.800,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+        <div class="card_2_2" data-price="7500">
+          <h2>familia</h2>
+          <ul>
+            <li>Destino: Mercúrio a Zythera
+            <li>Quantidade de pessoas: 8
+            <li>Valor: R$ 7.500,00
+          </ul>
+          
+          <div class="contador">
+            <button onclick="alterar(this, -1)">−</button>
+            
+            <span class="valor">0</span>
+            
+            <button onclick="zerar(this)">Zerar</button>
+            
+            <button onclick="alterar(this, 1)">+</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <div class="card_3_3">
+        <h1>Total</h1>
+        <h2 class="total">R$ 0,00</h2>
+      </div>
+      
+    </section>
+    
+    <section id="aeronaves" class="pagina">
+      
+      <div class="aero">
+        <div class="card_4">
+          <h2>
+            <strong>Aeronave:</strong> STEL-01 Seraphine
+          </h2>
+          <h2>
+            <strong>Classe:</strong> Luxo
+          </h2>
+          <h2>
+            <strong>Detalhes: </strong> A nave conta com atendimento de luxo, lugares espaçosos, comida gourmet, Tecnologia de ponta e Wi-Fi gratuito de última geração.
+            
+            Não podemos esquecer dos espaços reservados para crianças, pessoas com dificuldade em socializar, pessoas que não gostam de muito barulho e pais e mães cansados.
+            
+            A nave Seraphine foi projetada para acomodar ate 1.500 pessoas de forma que todas fiquem comfortaveis e tenham um espaço pessoal.
+          </h2>
+        </div>
+        <div class="card_4">
+          <h2>
+            <strong>Aeronave:</strong>STEL-02 Moonrise
+          </h2>
+          <h2>
+            <strong>Classe: </strong>Prioritário
+          </h2>
+          <h2>
+            <strong>Detalhes:</strong> A nave conta com atendimento de luxo, comida gourmet, lugares espaçosos, tecnologia de última geração e Wi-Fi gratuito de última geração.
+            
+            Também contém um espaço reservado para bebês e crianças, idosos, pessoas especiais e pessoas com algum tipo de problema mental.
+            
+            A Moonrise foi especialmente projetada para ser uma nave inclusiva, adaptada e que acomode 1.200 pessoas de forma confortável e não invasiva, priorizando sempre idosos, gestantes, pessoas especiais e pessoas com necessidade de acompanhamento.
+          </h2>
+        </div>
+        <div class="card_4">
+          <h2>
+            <strong>Aeronave: </strong>STEL-03 Cosmic Pear
+          </h2>
+          <h2>
+            <strong>Classe: </strong>Comum
+          </h2>
+          <h2>
+            <strong>Detalhes:</strong> A nave Cosmic Pear foi projetada para acomodar ate 2.000 pessoas de forma confortável.A nave conta com dois andares, aguentando 1.000 pessoas em cada andar, e com assentos comfortaveis e medios. A comida da nave é mais simples, porém é servida em um intervalo de tempo menos que as outras naves. A tecnologia é a segunda melhor do mundo, mas o Wi-Fi continua sendo o de última geração e totalmente gratuito.
+            A nave foi planejando para acomodar o maior número de pessoas possivel, porém de forma confortável para todas, há um espaço para troca e cuidado de bebês e outra para idosos.
+          </h2>
+        </div>
+        <div class="card_4">
+          <h2>
+            <strong>Aeronave: </strong>STEL-04 Eclipse
+          </h2>
+          <h2>
+            <strong>Classe: </strong>Turismo
+          </h2>
+          <h2>
+            <strong>Detalhes:</strong> A nave Eclipse foi projetada para tour por planetas ou sistemas, a nave consegue acomodar ate 1.200 pessoas, é equipada com cameras capazes de fotografar planetas e sistemas solares inteiros em 5K à qualquer momento, ela é resistente a temperaturas extremas e conta com áreas externas porém cobertas, proporcionando uma melhor visão do exterior da nave e do planeta.
+          </h2>
+        </div>
+        <div class="card_4">
+          <h2><strong>Aeronave:</strong> STEL-05 Celestia</h2>
+          <h2><strong>Classe:</strong> Mudança</h2>
+          <h2><strong>Detalhes: A nave Celestia foi provetada e pensada para pessoas que decidiram se mudar de planeta ou sistema solar, portanto a nave acomoda 800 pessoas, um número menor, porém com a finalidade de carregar ate 1 tonelada de carga, permitindo que os passageiros levem mais do que só algumas malas. Celestia pode levar desde objetoa grandes ate objetos pequenos, permitindo uma maior escolha do que levar para sua nova vida em outro lugar.</strong></h2>
+        </div>
+      </div>
+    </section>
+    
+    <section id="embarque" class="pagina">
+      
+      <section class="emb">
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Eclipse
+            <li>local: Rio Claro
+            <li>Horario de decolagem: 11:00 h
+            <li>Horario de embarque: 10:30 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Eclipse
+            <li>local: Riberao Preto
+            <li>Horario de decolagem: 13:00 h
+            <li>Horario de embarque: 12:30 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Celestia
+            <li>local: Rio claro
+            <li>Horario de decolagem: 10:00 h
+            <li>Horario de embarque: 9:00 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Celestial
+            <li>local: Campinas
+            <li>Horario de decolagem: 11:30 h
+            <li>Horario de embarque: 10:50 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Seraphine
+            <li>local: Rio claro
+            <li>Horario de decolagem: 9:00 h
+            <li>Horario de embarque: 8:00 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Seraphine
+            <li>local: Rio de Janeiro
+            <li>Horario de decolagem: 10:00 h
+            <li>Horario de embarque: 9:50 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Moonrise
+            <li>local: Rio claro
+            <li>Horario de decolagem: 12:00 h
+            <li>Horario de embarque: 11:00 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>Nave: Moonrise
+            <li>local: Campinas
+            <li>Horario de decolagem: 13:00 h
+            <li>Horario de embarque: 12:30 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>nave: Cosmic Pear
+            <li>local: Rio claro
+            <li>Horário de decolagem: 14:00 h
+            <li>horário de embarque: 15:30 h
+          </ul>
+        </div>
+        
+        <div class="card_4">
+          <ul>
+            <li>nave: Cosmic Pear
+            <li>local: Araras
+            <li>Horário de decolagem: 3:00 h
+            <li>horário de embarque: 2:00 h
+          </ul>
+        </div>
+      </section>
+    </section>
+    
+    
+    <section id="regras" class="pagina">
+      
+      
+      
+      <div class="card_6">
+        
+        <h2>Para a sua segurança Stellara tem algumas regras:</h2>
+      </div>
+      
+      <div class="card_7">
+        
+        <h1>ATENÇÃO</h1>
+        <h2>Caso as regras venham a ser violadas o passageiro será retirado imediatamente.</h2>
+      </div>
+      
+      <section class="reg">
+        
+        <div class="card_8">
+          <ul>
+            <li>Ao decolar ponha o cinto, não abra durante a viagem e confirme se pode abrir janelas e portas</li>
+            
+            <li>Respeito deve ser mantido o tempo todo </li>
+            
+            <li>civilizações, tripulantes, pilotos, aeromoças, culturas e planetas devem ser respeitados o tempo todo</li>
+          </ul>
+          
+        </div>
+        
+        <div class="card_8">
+          <ul>
+            <li>sempre siga as orientações dos pilotos, aeromoças e tradutores.</li>
+            
+            <li>É estritamente proibido todo e qualquer objeto perigo durante a viagem, a única exceção é em casa de mudança permanente para outro planeta (Nas naves de mudança)</li>
+          </ul>
+        </div>
+        
+      </section>
+    </section>
+    
+    <section id="destino" class="pagina">
+      <div class="card_mini">
+        <img src="assents/mercúrio.png">
+        <h1>Mercurio</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/Vênus.png">
+        <h1>Venus</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/marte.png">
+        <h1>marte</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/jupiter.png">
+        <h1>jupiter</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/urano.png">
+        <h1>urano</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/Netuno.png">
+        <h1>netuno</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/Saturno.png">
+        <h1>saturno</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/lua.png">
+        <h1>lua</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/aureon.png">
+        <h1>Aureon</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/noctara.png">
+        <h1>Noctara</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/cryon.png">
+        <h1>Cryon</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/Sylvara.png">
+        <h1>Sylvara</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/nereya.png">
+        <h1>Nereya</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/ignara.png">
+        <h1>ignara</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/veluria.png">
+        <h1>veluria</h1>
+      </div>
+      <div class="card_mini">
+        <img src="assents/zythera.png">
+        <h1>Zythera</h1>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <h1>AGENCIA DE VIAGENS ESPACIAIS</h1>
+  </footer>
+  
+  <script src="primeiro.js"></script>
+  
+</body>
+ 
+</html>
